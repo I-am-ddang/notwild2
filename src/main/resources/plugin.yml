@@ -1,0 +1,6 @@
+name: Notwild2
+version: 1
+main: com.ddang_.notwild2.Notwild2
+api-version: 1.18
+authors: [ DDang_ ]
+description: Notwild Main Plugin
