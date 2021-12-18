@@ -38,16 +38,16 @@ class Notwild2 : JavaPlugin() {
     private val events = arrayOf(Listener())
 
     private fun World.gamerule(){
-        setGameRule(GameRule.REDUCED_DEBUG_INFO, true)
-        setGameRule(GameRule.DO_WEATHER_CYCLE, false)
-        setGameRule(GameRule.DO_MOB_SPAWNING, false)
+        setGameRule(GameRule.REDUCED_DEBUG_INFO, false)
+        setGameRule(GameRule.DO_WEATHER_CYCLE, true)
+        setGameRule(GameRule.DO_MOB_SPAWNING, true)
         setGameRule(GameRule.KEEP_INVENTORY, true)
-        setGameRule(GameRule.DO_TRADER_SPAWNING, false)
-        setGameRule(GameRule.NATURAL_REGENERATION, false)
-        setGameRule(GameRule.DO_TILE_DROPS, false)
+        setGameRule(GameRule.DO_TRADER_SPAWNING, true)
+        setGameRule(GameRule.NATURAL_REGENERATION, true)
+        setGameRule(GameRule.DO_TILE_DROPS, true)
         setGameRule(GameRule.DO_IMMEDIATE_RESPAWN, true)
-        setGameRule(GameRule.FALL_DAMAGE, false)
-        setGameRule(GameRule.RANDOM_TICK_SPEED, 0)
+        setGameRule(GameRule.FALL_DAMAGE, true)
+        setGameRule(GameRule.RANDOM_TICK_SPEED, 6)
     }
 
     override fun onEnable() {

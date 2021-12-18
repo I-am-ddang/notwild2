@@ -12,6 +12,7 @@ plugins {
 dependencies {
     implementation ("org.jetbrains.kotlin:kotlin-stdlib")
     compileOnly ("io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT")
+    compileOnly("com.frengor:ultimateadvancementapi:2.0.5")
 }
 
 fun TaskContainer.createJar(name: String, configuration: ShadowJar.() -> Unit) {
@@ -68,6 +69,9 @@ repositories {
     }
     maven {
         url = uri("https://repo.codemc.org/repository/maven-public/")
+    }
+    maven {
+        url = uri("https://nexus.frengor.com/repository/public/")
     }
     maven { url = uri("https://jitpack.io") }
 
